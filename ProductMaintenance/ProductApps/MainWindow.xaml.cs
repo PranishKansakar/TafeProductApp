@@ -39,7 +39,11 @@ namespace ProductApps
                 decimal totalCharge = cProduct.TotalPayment + 25;
 
                 totalChargeTextBox.Text = Convert.ToString(totalCharge);
- 
+
+                decimal totalWrapCharge = cProduct.TotalPayment + 25 + 5;
+                totalChargeWrapTextBox.Text = Convert.ToString(totalWrapCharge);
+
+
             }
             catch (FormatException)
             {
